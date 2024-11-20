@@ -24,25 +24,27 @@ async function UsersLayout() {
 
   return (
     <>
-      <h1 className="flex flex-row w-full   items-center justify-center">mock api list by baghani</h1>
-      <hr />
-      Users:
+      <h1 className="flex flex-row w-full   items-center justify-center relative top-8">mock api list by baghani</h1>
+  
+
       {
         <ul>
           {tasks.map((user) => (
-            <div>
-              <li key={user.id} className="flex flex-row w-full   items-center justify-center">
+            <div className="flex flex-row w-full relative w-1/4 items-center justify-center bg-gray-400 h-6/6 me-auto ms-auto top-10 mt-4 rounded-xl rounded-lg" key={user.id} >
 
-            
+              <li className="flex flex-row w-full  items-center bg-gray-500 bg-opacity-10 w-80 ms-8 me-8  h-1/6 border-red-300 top-7 text-white pt-2 pb-2 justify-center rounded-md mt-2 mb-2 text-sm">
 
-              </li>
+                {user.name}
 
-              <li key={user.id}  className="flex flex-row w-full   items-center justify-center">
-                {user.createdAt}
+                <li className="flex    w-full  items-center bg-gray-600 w-10  border-red-300  text-white justify-center rounded-full  text-sm pt-2 pb-2 me-5 ms-unset  bg-opacity-10 ">
+                  {user.id}
 
-                <img src={user.avatar} >
 
-                </img>
+                </li>
+
+
+
+
 
               </li>
             </div>
