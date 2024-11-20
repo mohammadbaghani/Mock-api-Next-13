@@ -13,7 +13,7 @@ async function UsersLayout() {
 
 
 
-  const res = await fetch('https://673e00450118dbfe8609ba39.mockapi.io/baghani', {
+  const res = await fetch('https://673e00450118dbfe8609ba39.mockapi.io/baghani-second', {
 
     cache: "no-store",
   });
@@ -24,24 +24,25 @@ async function UsersLayout() {
 
   return (
     <>
-      <h1>Users Pages Breadcrumb</h1>
+      <h1 className="flex flex-row w-full   items-center justify-center">mock api list by baghani</h1>
       <hr />
       Users:
       {
         <ul>
           {tasks.map((user) => (
             <div>
-              <li key={user.id}>{user.name}
+              <li key={user.id} className="flex flex-row w-full   items-center justify-center">
+
+            
+
+              </li>
+
+              <li key={user.id}  className="flex flex-row w-full   items-center justify-center">
+                {user.createdAt}
 
                 <img src={user.avatar} >
 
                 </img>
-
-              </li>
-
-              <li key={user.id}>{user.createdAt}
-
-
 
               </li>
             </div>
