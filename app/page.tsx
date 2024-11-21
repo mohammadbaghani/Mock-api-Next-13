@@ -13,10 +13,7 @@ async function UsersLayout() {
 
 
 
-  const res = await fetch('https://673e00450118dbfe8609ba39.mockapi.io/baghani-second', {
-
-    cache: "no-store",
-  });
+  const res = await fetch('https://673e00450118dbfe8609ba39.mockapi.io/baghani-second');
   const tasks = await res.json();
   setUsers(tasks);
   console.log(tasks)
