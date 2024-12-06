@@ -1,6 +1,6 @@
-فچ دیتا api با Next js 13 
+فچ دیتاها با Next js 13 
 <br><br/>
-از سایت https://mockapi.io
+سایت منبع : https://mockapi.io
 <br><br/>
 
 <br><br/>
